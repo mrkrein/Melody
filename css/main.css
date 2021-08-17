@@ -49,3 +49,48 @@ body{
     font-size: 17px;
     line-height: 20px;
 }
+.footer{
+    background-color: #D7D7D7;
+    border-top: 4px solid #3596F5;
+    
+}
+.footer-block{
+    height: 170px;
+    max-width:1280px;
+    margin: auto;
+    display: flex;  /* Сделали блок гибким */
+    align-items: center;
+}
+.page-links{
+    color: #635854;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.footer-contact{
+    margin-left: 37px;
+    text-align: left;
+}
+.footer-text{
+    display:block;
+    color: #635854;
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.footer-phone{
+    color: #635854;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+}
+.social{
+    margin-left: 59px;
+}
+.social-link{
+    text-decoration: none;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
