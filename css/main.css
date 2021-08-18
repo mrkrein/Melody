@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Regular Regular'), local('BebasNeueRegular'),
+        url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+        url('../fonts/BebasNeueRegular.woff') format('woff');
+    font-display: swap;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -49,6 +57,73 @@ body{
     font-size: 17px;
     line-height: 20px;
 }
+
+/* HEADER ENDS */
+
+.main{
+    max-width:1280px;
+    margin: auto;
+    padding-top: 54px;
+    display: flex;
+}
+.main-info{
+    flex-grow: 1;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-title{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 37px;
+    line-height: 37px;
+    color: #635854;
+    margin: 0px;
+}
+.counter{
+    color: #635854;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 124px;
+}
+.counter-button{
+    cursor: pointer;
+}
+.button-primary{
+    background: #3596F5;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    padding: 16px 36px;
+    cursor: pointer;
+}
+.home-img path{
+    opacity: 0;
+    cursor: pointer;
+}
+.home-img path:hover{
+    opacity: 1;
+}
+.counter-group{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.counter-button{
+    background-color: #fff;
+    border: none;
+}
+.counter-arrow-down{
+    transform: rotateX(180deg);
+}
+
+
+
+
+/* MAIN ENDS */
+
 .footer{
     background-color: #D7D7D7;
     border-top: 4px solid #3596F5;
@@ -60,22 +135,23 @@ body{
     margin: auto;
     display: flex;  /* Сделали блок гибким */
     align-items: center;
+    justify-content: space-between;
 }
 .page-links{
     color: #635854;
     font-size: 16px;
     line-height: 19px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .footer-contact{
-    margin-left: 37px;
+    padding-left: 37px;
     text-align: left;
 }
 .footer-text{
     display:block;
     color: #635854;
-    margin-bottom: 4px;
+    padding-bottom: 4px;
     font-size: 14px;
     line-height: 16px;
 }
@@ -85,6 +161,9 @@ body{
     font-weight: bold;
     font-size: 17px;
     line-height: 20px;
+}
+.other-pages{
+    padding-right: 81px;
 }
 .social{
     margin-left: 59px;
