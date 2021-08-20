@@ -10,6 +10,11 @@ $(document).ready(function () {
     var modalCloseButton = $(".modal-close-button");
     var viewFlatsButton = $(".view-flats");
 
+
+    
+
+
+
     FlatsNum.on("mouseover", function(){
         currentFlat = $(this).attr('num');
         FlatsNum.removeClass("flat-link-active");
@@ -69,5 +74,22 @@ $(document).ready(function () {
             usCurrentFloor = currentFloor.toLocaleString("en-US", {minimumIntegerDigits:2, useGroupping: false});
             $(".modal-counter").text(usCurrentFloor);
 
+            var FlatListNum = currentFloor;
+            FlatListNum = FlatListNum * 10;
+            $(".flat-number-1").text(FlatListNum + 1);
+            $(".flat-number-2").text(FlatListNum + 2);
+            $(".flat-number-3").text(FlatListNum + 3);
+            $(".flat-number-4").text(FlatListNum + 4);
+            $(".flat-number-5").text(FlatListNum + 5);
+            $(".flat-number-6").text(FlatListNum + 6);
+            $(".flat-number-7").text(FlatListNum + 7);
+            $(".flat-number-8").text(FlatListNum + 8);
+            $(".flat-number-9").text(FlatListNum + 9);
+            $(".flat-number-10").text(FlatListNum + 10);
     }
+
+   
+        
+        
+    
 });
